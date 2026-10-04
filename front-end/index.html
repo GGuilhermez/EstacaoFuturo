@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estação Futuro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<header>
+    <h1>Estação Futuro</h1>
+    <p>Desafios públicos, soluções acadêmicas</p>
+</header>
+
+<main>
+
+    <!-- Início -->
+    <section id="inicio" class="tela ativa">
+        <div class="card">
+            <h2>Transformando desafios em soluções</h2>
+            <p>Conectamos desafios públicos a projetos acadêmicos, permitindo acompanhar todo o processo.</p>
+            <button id="btnEntrar">Entrar no sistema</button>
+        </div>
+    </section>
+
+    <!-- Login -->
+    <section id="login" class="tela">
+        <div class="card login-card">
+            <h2>Entrar no sistema</h2>
+            <p class="subtitulo">Acesse sua conta do Estação Futuro</p>
+
+            <form id="formLogin">
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" placeholder="Digite sua senha" required>
+                </div>
+
+                <button type="submit">Entrar</button>
+            </form>
+
+            <button id="btnVoltar" class="botao-secundario">Voltar</button>
+        </div>
+    </section>
+
+    <!-- Dashboard -->
+    <section id="dashboard" class="tela dashboard">
+
+        <aside class="sidebar">
+            <div class="sidebar-logo">
+                <h2>Estação Futuro</h2>
+                <span>Desafios públicos, soluções acadêmicas</span>
+            </div>
+
+            <nav>
+                <button class="menu-item ativo">Início</button>
+                <button id="btnDesafios" class="menu-item">Desafios</button>
+                <button class="menu-item">Projetos</button>
+                <button class="menu-item">Equipes</button>
+                <button class="menu-item">Avaliações</button>
+                <button class="menu-item">Etapas</button>
+                <button class="menu-item">Impactos</button>
+            </nav>
+
+            <button id="btnSair" class="menu-sair">Sair</button>
+        </aside>
+
+        <section class="conteudo-dashboard">
+
+            <div class="topo-dashboard">
+                <div>
+                    <span class="saudacao">Painel principal</span>
+                    <h2>Bem-vindo ao Estação Futuro</h2>
+                </div>
+                <div class="usuario-info">Usuário</div>
+            </div>
+
+            <div class="cards-resumo">
+                <div class="resumo-card">
+                    <span>Desafios</span>
+                    <strong>0</strong>
+                    <small>Desafios cadastrados</small>
+                </div>
+
+                <div class="resumo-card">
+                    <span>Projetos</span>
+                    <strong>0</strong>
+                    <small>Projetos acadêmicos</small>
+                </div>
+
+                <div class="resumo-card">
+                    <span>Equipes</span>
+                    <strong>0</strong>
+                    <small>Equipes formadas</small>
+                </div>
+
+                <div class="resumo-card">
+                    <span>Em andamento</span>
+                    <strong>0</strong>
+                    <small>Projetos em execução</small>
+                </div>
+            </div>
+
+            <div class="painel-inicial">
+                <h3>Fluxo do Estação Futuro</h3>
+                <p>Acompanhe o ciclo completo das soluções acadêmicas.</p>
+
+                <div class="fluxo">
+                    <div>Desafio</div><span>→</span>
+                    <div>Projeto</div><span>→</span>
+                    <div>Equipe</div><span>→</span>
+                    <div>Execução</div><span>→</span>
+                    <div>Impacto</div>
+                </div>
+            </div>
+
+        </section>
+    </section>
+<section id="desafios" class="tela">
+    <div class="conteudo-dashboard">
+        <div class="topo-dashboard">
+            <div>
+                <span class="saudacao">Gestão</span>
+                <h2>Desafios públicos</h2>
+            </div>
+
+            <button id="btnNovoDesafio">Novo desafio</button>
+        </div>
+
+        <div id="listaDesafios" class="painel-inicial">
+            <h3>Desafios cadastrados</h3>
+            <p>Nenhum desafio cadastrado.</p>
+        </div>
+
+        <div id="formularioDesafio" class="painel-inicial" style="display: none;">
+            <h3>Cadastrar desafio</h3>
+
+            <form id="formDesafio">
+                <div class="campo">
+                    <label for="tituloDesafio">Título</label>
+                    <input type="text" id="tituloDesafio" maxlength="200" required>
+                </div>
+
+                <div class="campo">
+                    <label for="descricaoDesafio">Descrição</label>
+                    <textarea id="descricaoDesafio" required></textarea>
+                </div>
+
+                <div class="campo">
+                    <label for="problemaDesafio">Problema público</label>
+                    <textarea id="problemaDesafio" required></textarea>
+                </div>
+
+                <div class="campo">
+                    <label for="objetivoDesafio">Objetivo</label>
+                    <textarea id="objetivoDesafio" required></textarea>
+                </div>
+
+                <div class="campo">
+                    <label for="secretariaDesafio">Secretaria responsável</label>
+                    <select id="secretariaDesafio" required>
+                        <option value="">Selecione uma secretaria</option>
+                    </select>
+                </div>
+
+                <button type="submit">Salvar desafio</button>
+                <button type="button" id="btnCancelarDesafio" class="botao-secundario">Cancelar</button>
+            </form>
+        </div>
+    </div>
+</section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estação Futuro</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="brand" aria-label="Estação Futuro">
+        <span class="brand-mark" aria-hidden="true">✦</span>
+        <div class="brand-copy">
+            <h1>Estação Futuro</h1>
+            <p>Desafios públicos, soluções acadêmicas</p>
+        </div>
+    </div>
+</header>
+
+<main>
+
+<section id="inicio" class="tela ativa">
+    <div class="inicio-hero">
+        <div class="card">
+            <h2>A prefeitura propõe o desafio. Você constrói a solução.</h2>
+            <p>Forme sua equipe, escolha um orientador e leve um problema real da cidade da análise até a entrega concluída!</p>
+            <button id="btnEntrar">Entrar no sistema</button>
+        </div>
+    </div>
+
+    <section class="proposito" aria-labelledby="propositoTitulo">
+        <div class="proposito-intro">
+            <span class="proposito-etiqueta">Universidade + Prefeitura</span>
+            <h2 id="propositoTitulo">Ideias acadêmicas para desafios reais da cidade</h2>
+            <p>
+                A Estação Futuro aproxima o poder público de estudantes, professores e pesquisadores.
+                A prefeitura compartilha desafios da comunidade; a universidade transforma conhecimento
+                em projetos colaborativos e soluções com impacto.
+            </p>
+        </div>
+
+        <div class="proposito-passos">
+            <article class="proposito-card">
+                <img src="img/aluno1.png" alt="Vista da cidade: os desafios públicos começam nas necessidades da comunidade." loading="lazy">
+                <div class="proposito-card-texto">
+                    <span>01 · A cidade apresenta</span>
+                    <h3>Desafios que importam</h3>
+                    <p>A prefeitura identifica questões reais e aproxima as demandas de quem pode ajudar a resolvê-las.</p>
+                </div>
+            </article>
+
+            <article class="proposito-card">
+                <img src="img/aluno2.png" alt="Estudantes trabalham juntos em uma solução acadêmica." loading="lazy">
+                <div class="proposito-card-texto">
+                    <span>02 · A universidade conecta</span>
+                    <h3>Conhecimento em colaboração</h3>
+                    <p>Estudantes, equipes e orientadores unem diferentes experiências para desenvolver propostas aplicáveis.</p>
+                </div>
+            </article>
+
+            <article class="proposito-card">
+                <img src="img/aluno3.png" alt="Computador com código em desenvolvimento: uma ideia começa a virar projeto." loading="lazy">
+                <div class="proposito-card-texto">
+                    <span>03 · Juntos, fazem acontecer</span>
+                    <h3>Soluções com impacto</h3>
+                    <p>Projetos saem do papel, avançam por etapas e ajudam a construir uma cidade melhor para todos.</p>
+                </div>
+            </article>
+        </div>
+
+        <div class="proposito-fecho">
+            <span aria-hidden="true">✦</span>
+            <p>Um ponto de encontro entre <strong>problemas públicos</strong>, <strong>talentos acadêmicos</strong> e <strong>futuro compartilhado</strong>.</p>
+        </div>
+    </section>
+
+    <footer class="contato" aria-labelledby="contatoTitulo">
+        <div class="contato-conteudo">
+            <div class="contato-intro">
+                <span class="proposito-etiqueta">Fale com a gestão</span>
+                <h2 id="contatoTitulo">Estamos aqui para ajudar</h2>
+                <p>Ficou com alguma dúvida ou precisa de apoio? Escolha o canal de contato que preferir.</p>
+            </div>
+
+            <div class="contato-canais">
+                <a class="contato-canal contato-whatsapp" href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer">
+                    <span class="contato-icone" aria-hidden="true">W</span>
+                    <span class="contato-canal-texto">
+                        <strong>WhatsApp</strong>
+                        <span>(00) 00000-0000</span>
+                    </span>
+                    <span class="contato-seta" aria-hidden="true">↗</span>
+                </a>
+                <a class="contato-canal" href="mailto:contato@estacaofuturo.example">
+                    <span class="contato-icone" aria-hidden="true">@</span>
+                    <span class="contato-canal-texto">
+                        <strong>E-mail</strong>
+                        <span>contato@estacaofuturo.example</span>
+                    </span>
+                    <span class="contato-seta" aria-hidden="true">↗</span>
+                </a>
+                <a class="contato-canal" href="tel:+5500000000000">
+                    <span class="contato-icone" aria-hidden="true">☎</span>
+                    <span class="contato-canal-texto">
+                        <strong>Ligação</strong>
+                        <span>+55 (00) 00000-0000</span>
+                    </span>
+                    <span class="contato-seta" aria-hidden="true">↗</span>
+                </a>
+            </div>
+
+            <p class="contato-aviso">Contatos fictícios para demonstração. Substitua pelos canais oficiais antes de publicar o site.</p>
+        </div>
+    </footer>
+</section>
+
+<section id="login" class="tela">
+    <div class="card login-card">
+        <h2>Entrar no sistema</h2>
+        <p class="subtitulo">Acesse sua conta do Estação Futuro</p>
+        <form id="formLogin">
+            <div class="campo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="seu@email.com" required>
+            </div>
+
+            <div class="campo">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="Digite sua senha" required>
+            </div>
+
+            <button type="submit">Entrar</button>
+        </form>
+
+        <button id="btnVoltar" class="botao-secundario">Voltar</button>
+    </div>
+</section>
+
+<section id="dashboard" class="tela dashboard">
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <h2>Estação Futuro</h2>
+            <span>Desafios públicos, soluções acadêmicas</span>
+        </div>
+
+        <nav>
+            <button class="menu-item ativo" data-tela="inicio">Início</button>
+            <button id="btnDesafios" class="menu-item" data-tela="desafios">Desafios</button>
+            <button class="menu-item" data-modulo="projetos">Projetos</button>
+            <button class="menu-item" data-modulo="equipes">Equipes</button>
+            <button class="menu-item" data-modulo="avaliacoes">Avaliações</button>
+            <button class="menu-item" data-modulo="etapas">Etapas</button>
+            <button class="menu-item" data-modulo="impactos">Impactos</button>
+        </nav>
+
+        <button id="btnSair" class="menu-sair">Sair</button>
+    </aside>
+
+    <section class="conteudo-dashboard">
+        <div id="dashboardHome">
+        <div class="topo-dashboard">
+            <div>
+                <span class="saudacao">Painel principal</span>
+                <h2>Bem-vindo ao Estação Futuro</h2>
+            </div>
+            <div class="usuario-info">Usuário</div>
+        </div>
+
+        <div class="cards-resumo">
+            <div class="resumo-card">
+                <span>Desafios</span>
+                <strong>0</strong>
+                <small>Desafios cadastrados</small>
+            </div>
+
+            <div class="resumo-card">
+                <span>Projetos</span>
+                <strong>0</strong>
+                <small>Projetos acadêmicos</small>
+            </div>
+
+            <div class="resumo-card">
+                <span>Equipes</span>
+                <strong>0</strong>
+                <small>Equipes formadas</small>
+            </div>
+
+            <div class="resumo-card">
+                <span>Em andamento</span>
+                <strong>0</strong>
+                <small>Projetos em execução</small>
+            </div>
+        </div>
+
+        <div class="painel-inicial">
+            <h3>Fluxo do Estação Futuro</h3>
+            <p>Acompanhe o ciclo completo das soluções acadêmicas.</p>
+
+            <div class="fluxo">
+                <div>Desafio</div><span>→</span>
+                <div>Projeto</div><span>→</span>
+                <div>Equipe</div><span>→</span>
+                <div>Execução</div><span>→</span>
+                <div>Impacto</div>
+            </div>
+        </div>
+        </div>
+
+        <section id="moduloVisual" class="modulo-visual" hidden>
+            <div class="topo-dashboard">
+                <div>
+                    <span class="saudacao" id="moduloRotulo">Gestão</span>
+                    <h2 id="moduloTitulo">Projetos</h2>
+                    <p class="modulo-descricao" id="moduloDescricao"></p>
+                </div>
+                <div class="modulo-acoes">
+                    <button class="botao-secundario" id="btnVoltarInicioModulo" type="button">Voltar ao painel</button>
+                    <button id="btnNovoRegistro" type="button">Adicionar</button>
+                </div>
+            </div>
+
+            <div class="modulo-resumo" id="moduloResumo" aria-live="polite"></div>
+
+            <div id="formularioModulo" class="painel-inicial formulario-modulo" hidden>
+                <div class="formulario-modulo-cabecalho">
+                    <div>
+                        <span class="saudacao">Novo registro</span>
+                        <h3 id="formularioModuloTitulo">Adicionar</h3>
+                    </div>
+                    <button class="botao-secundario" id="btnCancelarModulo" type="button">Cancelar</button>
+                </div>
+                <form id="formModulo" class="grade-formulario"></form>
+            </div>
+
+            <div class="lista-modulo-cabecalho">
+                <div>
+                    <h3 id="listaModuloTitulo">Registros</h3>
+                    <p>Os dados desta demonstração ficam apenas nesta sessão e não são enviados ao Supabase.</p>
+                </div>
+                <label class="busca-modulo">
+                    <span class="sr-only">Buscar registros</span>
+                    <input id="buscaModulo" type="search" placeholder="Buscar...">
+                </label>
+            </div>
+
+            <div id="listaModulo" class="lista-modulo" aria-live="polite"></div>
+        </section>
+    </section>
+
+    <div class="assistente" id="assistente">
+        <section class="assistente-painel" id="assistentePainel" aria-labelledby="assistenteTitulo" hidden>
+            <div class="assistente-cabecalho">
+                <div>
+                    <span class="assistente-status">Assistente virtual</span>
+                    <h2 id="assistenteTitulo">Como posso ajudar?</h2>
+                </div>
+                <button class="assistente-fechar" id="fecharAssistente" type="button" aria-label="Fechar instruções">×</button>
+            </div>
+            <p class="assistente-instrucao" id="assistenteInstrucao" aria-live="polite">
+                Escolha uma opção para ver orientações sobre como usar o painel.
+            </p>
+            <div class="assistente-opcoes" aria-label="Opções do painel">
+                <button type="button" data-assistente-topico="Início">Início</button>
+                <button type="button" data-assistente-topico="Desafios">Desafios</button>
+                <button type="button" data-assistente-topico="Projetos">Projetos</button>
+                <button type="button" data-assistente-topico="Equipes">Equipes</button>
+                <button type="button" data-assistente-topico="Avaliações">Avaliações</button>
+                <button type="button" data-assistente-topico="Etapas">Etapas</button>
+                <button type="button" data-assistente-topico="Impactos">Impactos</button>
+            </div>
+        </section>
+        <button class="assistente-botao" id="botaoAssistente" type="button"
+            aria-label="Abrir assistente virtual" aria-expanded="false" aria-controls="assistentePainel">
+            <img src="img/assistente.png" alt="">
+        </button>
+    </div>
+</section>
+
+<section id="desafios" class="tela">
+    <div class="conteudo-dashboard">
+
+        <div class="topo-dashboard">
+            <div>
+                <span class="saudacao">Gestão</span>
+                <h2>Desafios públicos</h2>
+            </div>
+            <div class="acoes-desafios">
+                <button id="btnVoltarPainel" class="botao-secundario" type="button">Voltar ao painel</button>
+                <button id="btnNovoDesafio" type="button">Novo desafio</button>
+            </div>
+        </div>
+
+        <div id="listaDesafios" class="painel-inicial">
+            <h3>Desafios cadastrados</h3>
+            <p>Nenhum desafio cadastrado.</p>
+        </div>
+
+        <div id="formularioDesafio" class="painel-inicial" style="display:none;">
+            <h3>Cadastrar desafio</h3>
+
+            <form id="formDesafio">
+
+                <div class="campo">
+                    <label for="tituloDesafio">Título</label>
+                    <input type="text" id="tituloDesafio" maxlength="200" required>
+                </div>
+
+                <div class="campo">
+                    <label for="descricaoDesafio">Descrição</label>
+                    <textarea id="descricaoDesafio" required></textarea>
+                </div>
+
+                <div class="campo">
+                    <label for="problemaDesafio">Problema público</label>
+                    <textarea id="problemaDesafio" required></textarea>
+                </div>
+
+                <div class="campo">
+                    <label for="objetivoDesafio">Objetivo</label>
+                    <textarea id="objetivoDesafio" required></textarea>
+                </div>
+
+                <div class="campo">
+                    <label for="secretariaDesafio">Secretaria responsável</label>
+                    <select id="secretariaDesafio" required>
+                        <option value="">Selecione uma secretaria</option>
+                    </select>
+                </div>
+
+                <button type="submit">Salvar desafio</button>
+                <button type="button" id="btnCancelarDesafio" class="botao-secundario">Cancelar</button>
+
+            </form>
+        </div>
+
+        <div id="detalhesDesafio" class="painel-inicial" style="display:none;">
+
+            <div class="topo-dashboard">
+                <div>
+                    <span class="saudacao">Detalhes</span>
+                    <h2 id="detalhesTitulo"></h2>
+                </div>
+
+                <div>
+                    <button id="btnEditarDesafio">Editar desafio</button>
+                    <button id="btnVoltarDesafios" class="botao-secundario">Voltar</button>
+                </div>
+            </div>
+
+            <div class="detalhes-conteudo">
+
+                <div class="detalhe-item">
+                    <span>Status</span>
+                    <strong id="detalhesStatus"></strong>
+                </div>
+
+                <div class="detalhe-item">
+                    <span>Secretaria responsável</span>
+                    <strong id="detalhesSecretaria"></strong>
+                </div>
+
+                <div class="detalhe-item">
+                    <span>Descrição</span>
+                    <p id="detalhesDescricao"></p>
+                </div>
+
+                <div class="detalhe-item">
+                    <span>Problema público</span>
+                    <p id="detalhesProblema"></p>
+                </div>
+
+                <div class="detalhe-item">
+                    <span>Objetivo</span>
+                    <p id="detalhesObjetivo"></p>
+                </div>
+
+                <div class="detalhe-item">
+                    <span>Criado em</span>
+                    <strong id="detalhesData"></strong>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
